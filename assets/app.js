@@ -11,13 +11,21 @@ var topics = ["Luke Skywalker",
 "Ewoks",
 "Porgs"];
 
+
+$("#submit").on("click", function(event) {
+    // prevent form from submitting
+    event.preventDefault();
+    var submitValue = $("#text-submit").val().trim();
+    topics.push(submitValue);
+    buttonCreate();
+  });
+
+
 function buttonCreate () {
     for(var i = 0; i < topics.length; i++){
         var buttons = $("#button-space");
         buttons = buttons.append($("<button id = val-" + i + ">"));
-        var newButtons = $("#val-" + i);
+        var addToButtons = $("#val-" + i);
         $("#val-" + i).text(topics[i]);
     }
-}
-
-buttonCreate();
+};
