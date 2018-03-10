@@ -11,6 +11,7 @@ var topics = ["Luke Skywalker",
 "Ewoks",
 "Porgs"];
 
+buttonCreate();
 
 $("#submit").on("click", function(event) {
     // prevent form from submitting
@@ -22,10 +23,11 @@ $("#submit").on("click", function(event) {
 
 
 function buttonCreate () {
+        $("#button-space").html("");
     for(var i = 0; i < topics.length; i++){
         var buttons = $("#button-space");
         buttons = buttons.append($("<button id = val-" + i + ">"));
         var addToButtons = $("#val-" + i);
-        $("#val-" + i).text(topics[i]);
+        addToButtons.append(topics[i]);
     }
 };
