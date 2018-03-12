@@ -1,0 +1,49 @@
+#background {
+    position: fixed;
+    z-index: -10;
+    width: 100%;
+}
+
+button {
+    margin: 5px;
+    color: black;
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gif{
+    float: left;
+    margin: 5px;
+    color: yellow;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    background: black;
+    border-top: 2px groove yellow;
+    /* border-bottom: 2px groove red; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: yellow;
+    width: 100%;
+}
+
+form{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background: yellow;
+    float: right;
+    padding: 5px;
+}
+
+#github, #linkedin, #stack {
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    margin: 10px 2px;
+}
