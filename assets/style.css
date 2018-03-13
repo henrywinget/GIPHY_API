@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+body {
+    background: black;
+}
+
 button {
     margin: 5px;
     color: black;
@@ -33,12 +37,8 @@ button {
     margin-bottom: auto;
 }
 
-#gif-dump {
-    margin-bottom: 400px;
-}
-
 .footer{
-    position: fixed;
+    position: relative;
     bottom: 0px;
     background: black;
     border-top: 2px groove yellow;
@@ -48,7 +48,12 @@ button {
     padding-bottom: 20px;
     color: yellow;
     width: 100%;
+    float: right;
 }
+
+.content {
+    min-height: calc(100vh - 70px);
+  }
 
 form{
     color: black;
