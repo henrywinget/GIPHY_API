@@ -11,12 +11,16 @@ button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.gif{
+.gifs-in-here{
     float: left;
     margin: 5px;
     color: yellow;
     text-align: center;
     margin-bottom: auto;
+}
+
+#gif-dump {
+    margin-bottom: 400px;
 }
 
 .footer{
